@@ -1,8 +1,10 @@
 import Image from 'next/image';
+import Navigation from './Navigation';
 
 const Header = () => {
   return (
     <>
+      <Navigation />
       <header className="lifescienceheader flex w-full flex-col p-10">
         <div className="pb-8">
           {/* <h1 className="bg-gradient-to-r from-purple-2 to-green-400 bg-clip-text text-center text-4xl font-bold text-transparent">
