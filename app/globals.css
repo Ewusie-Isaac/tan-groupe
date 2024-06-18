@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Mukta', sans-serif;
+
+  /* font-family: Inter; */
+}
+
+@layer utilities {
+  .btn_white {
+    @apply border-white bg-white px-8 py-3 text-green-50;
+  }
+  .btn_white_text {
+    @apply border-white bg-white px-8 py-3 text-gray-90;
+  }
+  .btn_purple {
+    @apply border-purple-1 bg-purple-2 px-8 py-3 text-white;
+  }
+  .btn_purple-color {
+    @apply border-purple-1 bg-purple-2 p-2  text-white;
+  }
+  .btn_dark_green {
+    @apply bg-green-90 px-8 py-4 text-white transition-all hover:bg-black;
+  }
+  .btn_dark_green_outline {
+    @apply border-gray-20 bg-green-90 px-8 py-5 text-white;
+  }
+
+  .flex-1 {
+    @apply flex flex-col items-center justify-center;
+  }
+  .project-item {
+    @apply flex-1 rounded-lg shadow-lg transition-all hover:shadow-xl;
+  }
+  .flex-2 {
+    @apply flex flex-row items-center justify-center;
+  }
+  /* .max-container {
+    @apply mx-auto max-w-[1440px];
+  } */
+  .max-container {
+    @apply mx-auto max-w-full;
+  }
+
+  .padding-container {
+    @apply px-6 lg:px-5 3xl:px-0;
+  }
+
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
+
+  .flexBetween {
+    @apply flex items-center justify-between;
+  }
+
+  .flexStart {
+    @apply flex items-center justify-start;
+  }
+
+  .flexEnd {
+    @apply flex items-center justify-end;
+  }
+
+  /* FONTS */
+  .regular-64 {
+    @apply text-[64px] font-[400] leading-[120%];
+  }
+
+  .regular-40 {
+    @apply text-[40px] font-[400] leading-[120%];
+  }
+
+  .regular-32 {
+    @apply text-[32px] font-[400];
+  }
+
+  .regular-24 {
+    @apply text-[24px] font-[400];
+  }
+
+  .regular-20 {
+    @apply text-[20px] font-[400];
+  }
+
+  .regular-18 {
+    @apply text-[18px] font-[400];
+  }
+
+  .regular-16 {
+    @apply text-[16px] font-[400];
+  }
+
+  .regular-14 {
+    @apply text-[14px] font-[400];
+  }
+
+  .medium-14 {
+    @apply text-[14px] font-[600];
+  }
+
+  .bold-88 {
+    @apply text-[88px] font-[700] leading-[120%];
+  }
+
+  .bold-64 {
+    @apply text-[64px] font-[700] leading-[120%];
+  }
+
+  .bold-52 {
+    @apply text-[52px] font-[700] leading-[120%];
+  }
+
+  .bold-40 {
+    @apply text-[40px] font-[700] leading-[120%];
+  }
+
+  .bold-32 {
+    @apply text-[32px] font-[700] leading-[120%];
+  }
+
+  .bold-20 {
+    @apply text-[20px] font-[700];
+  }
+
+  .bold-18 {
+    @apply text-[18px] font-[700];
+  }
+
+  .bold-16 {
+    @apply text-[16px] font-[700];
+  }
+
+  /* Hero */
+  .hero-map {
+    @apply absolute right-0 top-0 h-screen w-screen bg-pattern-2 bg-cover bg-center md:-right-28 xl:-top-40;
+  }
+  /* .hero-map {
+    @apply absolute right-0 top-0 h-screen w-screen bg-pattern-2 bg-cover bg-center md:-right-28 xl:-top-10;
+  } */
+  /* Camp */
+  .camp-quote {
+    @apply absolute -right-6 bottom-4 w-[140px] lg:bottom-10 xl:-right-8 xl:w-[186px] 3xl:right-0;
+  }
+  .service-list {
+    @apply mt-2 flex grow items-center justify-center gap-1 rounded-xl bg-white px-[5px] py-3 shadow-md transition-all hover:bg-purple-1 hover:text-gray-100 lg:px-4;
+  }
+  /* Feature */
+  .feature-phone {
+    @apply absolute top-[13%] z-10 hidden max-w-[1500px] rotate-[15deg] md:-left-16 lg:flex  3xl:left-20;
+  }
+  .about-list{
+    @apply flex h-40 flex-col items-center justify-center gap-4 bg-green-700 text-center text-gray-200;
+  }
+
+  /* Get App */
+  /* .get-app {
+    @apply max-container relative flex w-full  flex-col justify-between gap-5 overflow-hidden  bg-green-400 bg-cover bg-center bg-no-repeat px-6 py-12 sm:flex-row sm:gap-8 sm:py-24 lg:px-20 xl:max-h-[600px] 2xl:rounded-5xl;
+  } */
+  .get-app {
+    @apply max-container relative flex w-full  flex-col-reverse justify-between gap-3 overflow-hidden bg-cover bg-center bg-no-repeat px-3 py-10 sm:flex-row sm:gap-8 sm:py-14  2xl:rounded-5xl;
+  }
+  .warehouse {
+    @apply w-full scroll-smooth border-2 p-2 lg:bg-gray-20 lg:px-8 lg:py-5;
+  }
+  .warehouse-wrapper {
+    @apply get-app flex flex-col-reverse sm:flex sm:flex-col-reverse  md:flex md:flex-col-reverse  lg:grid   lg:grid-cols-2;
+  }
+  .warehouse-text {
+    @apply flex flex-1 flex-col justify-center rounded-xl bg-white p-4 shadow-lg lg:p-8;
+  }
+
+  .warehouse-header {
+    @apply text-xl font-bold text-gray-50;
+  }
+  .warehouse-para {
+    @apply mt-2 text-gray-50;
+  }
+  .w-button {
+    @apply mt-4 flex w-max bg-purple-2 p-3 text-gray-100 lg:p-5;
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* ///////  Secound part ////////// */
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .input {
+    @apply border pl-2 text-base leading-normal text-gray-500 outline-none max-sm:w-full max-sm:rounded-full max-sm:border-purple-500 max-sm:p-5 sm:flex-1 sm:border-none;
+  }
+}
+
+@layer utilities {
+  .padding {
+    @apply px-8 py-12 sm:px-16 sm:py-24;
+  }
+  .position-relative {
+    @apply relative;
+  }
+
+  .padding-x {
+    @apply px-8 sm:px-16;
+  }
+
+  .padding-y {
+    @apply py-12 sm:py-24;
+  }
+
+  .padding-l {
+    @apply pl-8 sm:pl-16;
+  }
+
+  .padding-r {
+    @apply pr-8 sm:pr-16;
+  }
+
+  .padding-t {
+    @apply pt-12 sm:pt-24;
+  }
+
+  .padding-b {
+    @apply pb-12 sm:pb-24;
+  }
+
+  .info-text {
+    @apply text-lg leading-7 text-gray-500;
+  }
+}
+.services {
+  /* background-image: linear-gradient(
+      to right bottom,
+      rgba(201, 183, 195, 0.804),
+      rgba(243, 206, 243, 0.801)
+    ),
+    url('/main/main-1.jpg'); */
+  background-image: url('/main/main-4.webp');
+  background-size: cover;
+  background-position: center;
+}

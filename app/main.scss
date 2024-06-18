@@ -1,0 +1,362 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+///// TAN GROUP //////
+//////////////////////
+.tangroup {
+  padding: 1.3rem;
+  min-height: 100vh;
+  background-image: linear-gradient(
+      105deg,
+      rgba(255, 255, 255, 0.678) 0%,
+      rgba(255, 255, 255, 0.68) 100%,
+      transparent 100%,
+      transparent
+    ),
+    url('/tangroup-2.jpg');
+  // background-image: url('/main/lab.mp4');
+  background-size: cover;
+  background-position: center;
+  &-list {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    // gap: 3rem;
+  }
+  &-list {
+    margin: 2.3rem 0.4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 0.4rem;
+  }
+}
+.link:hover > ul,
+.dropdrown {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  margin-top: 7rem;
+}
+.dropdrown {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: #ffffff;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 15rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 3.5rem;
+  left: 0;
+  // display: none;
+  // display: flex;
+  // flex-direction: column;
+
+  // &-wrapper {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+  &:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+  &-list {
+    // padding-top: 4rem;
+    display: block;
+  }
+  &-list:hover {
+    clear: both;
+    width: 100%;
+  }
+}
+///// ECOFARMS //////
+//////////////////////
+.tanfarm {
+  padding: 1.3rem;
+  min-height: 100vh;
+  background-image: linear-gradient(
+      105deg,
+      rgba(255, 255, 255, 0.678) 0%,
+      rgba(255, 255, 255, 0.68) 100%,
+      transparent 100%,
+      transparent
+    ),
+    url('/farm/seed.jpg');
+  // background-image: url('/main/lab.mp4');
+  background-size: cover;
+  background-position: center;
+}
+.about {
+  background-image: url('/farm/nuts-3.jpg');
+  // background-image: url('/main/lab.mp4');
+  background-size: cover;
+  background-position: center;
+}
+///NUTS//
+.nut-1 {
+  padding: 8rem;
+  // height: 100vh;
+  background-image: url('/farm/almond-11.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.nut-2 {
+  padding: 8rem;
+  // height: 100vh;
+  background-image: url('/farm/cashew-nut1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.nut-3 {
+  padding: 8rem;
+  // height: 100vh;
+  background-image: url('/farm/peanut.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.nut-4 {
+  padding: 8rem;
+  // height: 100vh;
+  background-image: url('/farm/maize.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+///SEEDS//
+.seed-1 {
+  padding: 8rem;
+  // height: 100vh;
+  background-image: url('/farm/seed-1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.seed-2 {
+  padding: 8rem;
+  // height: 100vh;
+  background-image: url('/farm/seed-2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.seed-3 {
+  padding: 8rem;
+  // height: 100vh;
+  background-image: url('/farm/nuts-1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.seed-4 {
+  padding: 8rem;
+  // height: 100vh;
+  background-image: url('/farm/nuts.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.seed-5 {
+  padding: 8rem;
+  // height: 100vh;
+  background-image: url('/farm/walnut.jpg');
+  background-size: cover;
+  background-position: center;
+}
+///GRAINS and CEREALS//
+.grain-1 {
+  padding: 8rem;
+  // height: 100vh;
+  background-image: url('/farm/maize-1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.grain-2 {
+  padding: 8rem;
+  // height: 100vh;
+  background-image: url('/farm/rice.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.grain-3 {
+  padding: 8rem;
+  // height: 100vh;
+  background-image: url('/farm/oats.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.grain-4 {
+  padding: 8rem;
+  // height: 100vh;
+  background-image: url('/farm/wheat-1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.grain-5 {
+  padding: 8rem;
+  // height: 100vh;
+  background-image: url('/farm/seed-3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.partners {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  color: #141313;
+
+  &::after,
+  &::before {
+    content: '';
+    height: 1px;
+    display: block;
+    background-color: currentColor;
+  }
+}
+
+.grid-1 {
+  margin: 2.3rem 0.4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.2rem;
+  // align-items: start;
+}
+.grid-1-1 {
+  margin: 2.3rem 0.4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 4rem;
+  // align-items: start;
+}
+.key-grid {
+  margin: 2.3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1.5rem;
+  // align-items: start;
+}
+/////////////////////////////////////////////////////
+/// /////////////////////////////////////////////////
+/// /////////////////////////////////////////////////
+.numbers {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  color: rgb(192, 13, 180);
+
+  &::before,
+  &::after {
+    content: '';
+    height: 3px;
+    display: block;
+    background-color: currentColor;
+  }
+}
+
+.lifescienceheader {
+  background-image: linear-gradient(
+      105deg,
+      rgba(255, 255, 255, 0.87) 0%,
+      rgba(255, 255, 255, 0.872) 50%,
+      transparent 50%,
+      transparent
+    ),
+    url('/life/lab-6.jpg');
+  // background-image: url('/main/lab.mp4');
+  background-size: cover;
+  background-position: center;
+}
+.lifes {
+  margin: 10rem 8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+  align-items: start;
+}
+.life {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 1.4rem;
+
+  &_img {
+    width: 4.5rem;
+    height: 4.5rem;
+    grid-row: 1 / span 2;
+  }
+  &_para {
+    font-size: 1rem;
+  }
+}
+.offers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 5rem;
+}
+
+.process {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 2rem;
+  & > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 1.2rem;
+
+    box-shadow:
+      inset 0 -3em 3em rgba(247, 160, 238, 0.3),
+      0 0 0 2px white,
+      0.3em 0.3em 1em rgba(177, 78, 177, 0.6);
+  }
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 2rem;
+}
+.nav-head {
+  color: aliceblue;
+  margin: 1rem;
+  background-image: linear-gradient(
+    270deg,
+    rgba(147, 20, 117, 0.87) 0%,
+    rgba(121, 64, 110, 0.872) 20%,
+    transparent 40%,
+    transparent
+  );
+}
+
+.staffs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 3rem;
+}
+.f_first {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+  & > * {
+    justify-self: center;
+    align-self: center;
+  }
+}
+.news {
+  display: grid;
+  // grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 3rem;
+
+  // &_wrapper {
+  //   display: grid;
+  //   grid-template-columns: repeat(2, 1fr);
+  // }
+}
